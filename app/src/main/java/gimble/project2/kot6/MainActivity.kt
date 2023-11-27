@@ -74,19 +74,17 @@ class MainActivity : AppCompatActivity() {
         val fragTransaction = fragManager.beginTransaction()
         fragTransaction.replace(R.id.container,frag)
         fragTransaction.commit()
-        Toast.makeText(this,"went throw this",Toast.LENGTH_SHORT).show()
+
     }
 
     //diff frags
     private fun stats(): Boolean{
        fragReplacer(StatsFrag())
-        Toast.makeText(this,"this works 1",Toast.LENGTH_SHORT).show()
         return true
     }
 
     private fun egg() : Boolean{
        fragReplacer(EggsFrag())
-        Toast.makeText(this,"this works 2",Toast.LENGTH_SHORT).show()
         //supportFragmentManager.commit{}
 
         return true
@@ -94,7 +92,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun home() : Boolean{
         fragReplacer(HomeFrag())
-        Toast.makeText(this,"this works 3",Toast.LENGTH_SHORT).show()
         return true
     }
 

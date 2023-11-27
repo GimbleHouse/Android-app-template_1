@@ -6,13 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".EggsFrag">
 
-    <ImageView
-        android:id="@+id/imageView"
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars[5]" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
